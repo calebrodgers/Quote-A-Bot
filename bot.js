@@ -18,6 +18,9 @@ client.on('ready', () => {
 
 // When a message is received
 client.on('message', msg => {
+    // Console Log msg content
+    console.log(msg);
+    
     // Check if the bot is tagged
     if (msg.mentions.has(client.user)) {
         // Select a quote
